@@ -8,7 +8,7 @@ const Header=()=>{
     useEffect(()=>{
         const user =JSON.parse(localStorage.getItem('user'))
         if(user) {
-            setLoginUser(user)
+            setLoginUser(user);
         }
     })
     const logoutHandler=()=>{

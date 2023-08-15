@@ -5,6 +5,6 @@ const router = express.Router();
 
 router.post("/add-Transaction", addTransaction);
 
-router.get("/get-transaction", getALLTransaction);
+router.post("/get-transaction", getALLTransaction);
 
 module.exports = router;

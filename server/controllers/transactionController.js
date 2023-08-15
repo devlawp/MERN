@@ -1,7 +1,7 @@
 const transactionModel =require('../models/transactionModel')
 const getALLTransaction=async(req,res)=>{
         try{
-        const Transactions = await transactionModel.find({})
+        const Transactions = await transactionModel.find({userid:req.body.userid})
         res.status(200).json(Transactions);
     }catch(error){
         console.log(error);
