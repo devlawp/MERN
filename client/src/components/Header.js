@@ -18,22 +18,17 @@ const Header=()=>{
     }
     return(
         <div>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+            <nav className="navbar navbar-expand-lg bg-dark py-1 ">
             <div className="container-fluid mx-auto max-w-6xl text-center drop-shadow-lg text-gray-800">
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <Link className="navbar-brand" to="/" >Expense Tracker</Link>
+                <Link className="navbar-brand fs-2 text-light" to="/" >Expense Tracker</Link>
                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li className="nav-item">
-                    <p className="nav-link">{loginUser && loginUser.name}</p>
+                    <li className="nav-item p-2 text-uppercase fw-bold">
+                    <p className="nav-link antialiased fs-5 m-auto text-light">{loginUser && loginUser.name}</p>
                     </li>
-                    <li className="nav-item">
-                    <button className="btn btn-primary" onClick={logoutHandler}>Logout</button>
+                    <li className="nav-item p-2">
+                    <button className="btn btn-primary bg-white text-black fs-auto my-1 py-0.25" onClick={logoutHandler}>Logout</button>
                     </li>
                 </ul>
-                </div>
             </div>
             </nav>
         </div>

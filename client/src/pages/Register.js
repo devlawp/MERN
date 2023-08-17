@@ -24,23 +24,24 @@ const Register=()=>{
         }
     },[navigate]);
     return(
-    <>
+    <div className="register-cs">
     <div className="register-page">
         {loading && <Spinner />}
+        <div className="rp">
         <Form layout="vertical" onFinish={submitHandler}>
-                <h1>Register Form</h1>
-            <Form.Item label="Name" name="name">
+                <h1 className="font-bold mx-8">REGISTER</h1>
+                <Form.Item className="font-bold mx-1 " label="Name" name="name">
                 <Input/>
             </Form.Item>
-            <Form.Item label="Password" name="password">
+            <Form.Item className="font-bold mx-1" label="Password" name="password">
                 <Input type="password"/>
             </Form.Item>
             <div>
-                <Link to="/login">Already Register?</Link>
-                <button className="btn btn-primary">Register</button>
+                <Link className="font-bold mx-2" to="/login">Already Register?</Link>
+                <button className="btn btn-primary border mt-3 py-2 text-while bg-dark w-100 rounded">Register</button>
             </div>
-        </Form>
+        </Form></div>
     </div>
-    </>
+    </div>
     )}
 export default Register;

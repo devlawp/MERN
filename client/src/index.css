@@ -1,4 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --color-yellow:#f9c74f;
+    --color-purple:#9d4edd;
+}
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -11,9 +20,71 @@
     justify-content: center;
     height: 90vh;
 }
+.register-cs{
+    background-image:url(D:\MERN_FINAL\client\src\components\pexels-lukas-628281.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 1000px;
+}
+
 .login-page{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 90vh;
+    
+}
+.login-cs{
+    background-image:url(D:\MERN_FINAL\client\src\components\pexels-lukas-628281.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 1000px;
+}
+.content{
+    text-align: center;
+    padding:0;
+    background-image:url(https://st2.depositphotos.com/3922387/8342/i/450/depositphotos_83428804-stock-photo-abstract-pastel-sky-blurred-background.jpg);
+    background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  height: 1000px;
+}
+
+.bg-yellow{
+    background-color: var(--color-yellow);
+}
+.bg-purple{
+    background-color: var(--color-purple);
+}
+.form-cs{
+    border-radius: 10px;
+    backdrop-filter:blur(10px);
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 1px 12px rgba(255,255,255,0.25);
+    border: 1px solid rgba(255,255,255,0.3);
+    height: 600px;
+    width: 600px;
+    margin-top: 70px;
+    padding: px;
+}
+.rp{
+    border-radius: 10px;
+    backdrop-filter:blur(10px);
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 1px 12px rgba(255,255,255,0.25);
+    border: 1px solid rgba(255,255,255,0.3);
+    height: 400px;
+    width: 300px;
+}
+
+.lp{
+    border-radius: 10px;
+    backdrop-filter:blur(10px);
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 1px 12px rgba(255,255,255,0.25);
+    border: 1px solid rgba(255,255,255,0.3);
+    height: 400px;
+    width: 300px;
 }

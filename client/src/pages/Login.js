@@ -25,23 +25,23 @@ const Login=()=>{
         }
     },[navigate]);
     return(
-    <>
+    <div className="login-cs">
     <div className="login-page">
         {loading && <Spinner/>}
-        <Form layout="vertical" onFinish={submitHandler}>
-                <h1>Login Form</h1>
-            <Form.Item label="Name" name="name">
-                <Input/>
+        <div className="lp">
+            <Form  layout="vertical" onFinish={submitHandler}>
+                <h1 className="font-bold mx-8">LOGIN</h1>
+            <Form.Item className="font-bold mx-1 " label="Name" name="name">
+                <Input className="w-full"/>
             </Form.Item>
-            <Form.Item label="Password" name="password">
-                <Input type="password"/>
+            <Form.Item className="font-bold mx-1" label="Password" name="password">
+                <Input className="font-bold " type="password"/>
             </Form.Item>
-            <div>
-                <Link to="/register">Not Register?</Link>
-                <button className="btn btn-primary">login</button>
+            <div className="font-bold mx-8">
+                <Link className="font-bold mx-2" to="/register">Not Register?</Link>
+                <button className="btn btn-primary border mt-3 py-2 text-while bg-dark w-100 rounded">login</button>
             </div>
-        </Form>
-    </div>
-    </>
+        </Form></div>
+    </div></div>
     )}
 export default Login;
